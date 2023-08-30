@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    line-height: 1.6;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.select{
+    background-color: #024b75;
+}
+
+header{
+    text-align: center;
+    background-color: beige;
+}
+header img{
+    width: 100%;
+}
+header .contenedor h1{
+    color: #007cc2;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    margin: 0;
+}
+nav{
+    margin: 0;
+    background-color: #005A8F;
+}
+nav>ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+}
+nav>ul>li{
+    flex-grow: 1;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    /* background-color: #005A8F; */
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 1em;
+    transition: all .2s;
+
+}
+nav>ul>li>a:hover{
+    background-color: #024b75;
+    transition: all .2s;
+}
+
+#contenido>h2{
+    font-size: 2.8rem;
+    margin: 2rem 0;
+    text-align: center;
+    color: #292929;
+    text-transform: capitalize;
+}
+/*  principal / secundario  / gerente / historias /mision 
+ / categoria*/
+.principal__content,
+.secundario__content,
+.gerente__content,
+.historia__content,
+.mision__content,
+.categoria__content,
+.marcas__content,
+.recetas__content,
+.sucursales__content{
+    display: grid;
+    row-gap: 4rem;
+    place-items: center;
+    padding: 4rem 0 2rem;
+}
+.secundario{
+    background-color: #F7F9FC;
+}
+.titulos-h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #007cc2;
+}
+.principal__image,
+.secundario__image,
+.gerente__image,
+.historia__image,
+.mision__image,
+.categoria__image,
+.marcas__image,
+.recetas__image,
+.sucursales__image{
+    width: 100%;
+    max-width: 45rem;
+    height: auto;
+}
+.principal__image img,
+.secundario__image img,
+.gerente__image img,
+.historia__image img,
+.mision__image img,
+.categoria__image img,
+.marcas__image img,
+.recetas__image img,
+.sucursales__image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/*   --------   */
+.tienda{
+    padding: 7rem 0 4rem;
+}
+.tienda__img{
+    width: 100%;
+    height: 20rem;
+    background-image: url("/img/foto-tienda.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.tienda__img::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.tienda .tienda__img h2{
+    position: relative;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+.tienda .tienda__img a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    border: 1px solid #007cc2;
+    background-color: #007cc2;
+    padding: 1rem 4rem;
+    transition: all .3s;
+}
+.tienda .tienda__img a:hover{
+    transition: all .3s;
+    background-color:transparent;
+}
+/*   --------   */
+.gerente{
+    padding: 2rem 0 4rem;
+
+}
+.gerente__descripcion img{
+    width:15rem;
+    height: 10rem;
+}
+.gerente__image img{
+    border-radius: 25px;
+}
+/*    --------- */
+footer{
+    /* background-color: #012A42; */
+    background-color: #0a3c5a;
+    padding: 3rem 0 2rem;
+}
+.footer{
+    display: grid;
+    row-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.footer__columna-uno{
+    color: #fff;
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+}
+.footer__columna-uno img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+.footer__columna--flex h3{
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+.footer__columna--flex a{
+    color: #fff;
+}
+.footer__columna-dos nav{
+    background-color: transparent;
+}
+.footer__columna-dos nav>ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+}
+.footer__columna-dos nav>ul>li{
+    flex-grow: 0;
+}
+.footer__columna-dos nav>ul>li>a{
+    text-align: initial;
+    padding: 0;
+    display: inline-block;
+}
+.footer__columna-dos nav>ul>li>a:hover{
+    background-color:transparent;
+    transition: all .2s;
+    text-decoration: underline;
+}
+.copy{
+    color: #fff;
+    text-align: center;
+    margin-top: 3rem;
+}
+/* -- - - - */
+
+
+
+/*   sitio responsivo*/
+@media screen and (min-width:768px){
+    header .contenedor h1{
+        font-size: 4.3rem;
+    }
+    #contenido>h2{
+        font-size: 3.6rem;
+        max-width: 30ch;
+        margin: 2rem auto;
+    }
+    .principal__content,
+    .secundario__content,
+    .gerente__content,
+    .historia__content,
+    .mision__content,
+    .categoria__content,
+    .marcas__content,
+    .recetas__content,
+    .sucursales__content{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 3rem;
+        grid-auto-flow: column;
+    }
+    .secundario__descripcion{
+        grid-column: 2/3;
+    }
+    .tienda .tienda__img h2{
+        font-size: 4rem;
+    }
+    .footer{
+        display: grid;
+        row-gap: 4rem;
+        justify-content: center;
+        align-items: center;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
